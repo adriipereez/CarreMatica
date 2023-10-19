@@ -7,7 +7,6 @@ public class generadorlinea : MonoBehaviour
 
     public GameObject PrefabLinea;
 
-
  private void GenerarLinea()
  {
      GameObject linea = Instantiate(PrefabLinea);

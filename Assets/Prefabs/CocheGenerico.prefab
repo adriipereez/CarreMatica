@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4903172558020288006
+--- !u!1 &6755528872920478695
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5291910684275551127}
-  - component: {fileID: 6867446453633153515}
-  - component: {fileID: -5493089481690238777}
+  - component: {fileID: 4668854201463849278}
+  - component: {fileID: 352540872447983550}
+  - component: {fileID: 2851684762557957075}
   m_Layer: 0
-  m_Name: Obj_Bush
+  m_Name: CocheGenerico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5291910684275551127
+--- !u!4 &4668854201463849278
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4903172558020288006}
+  m_GameObject: {fileID: 6755528872920478695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5605865, y: -3.746964, z: 0}
+  m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 14.25538, y: -1.5465635, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6867446453633153515
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!212 &352540872447983550
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4903172558020288006}
+  m_GameObject: {fileID: 6755528872920478695}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,29 +71,42 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 11082059
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b41886178a0601849a7c9572ec4df5f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d2ac7cc98b514192a5151f96f745c60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.01, y: 2.01}
+  m_Size: {x: 4.6875, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-5493089481690238777
+--- !u!114 &2851684762557957075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4903172558020288006}
+  m_GameObject: {fileID: 6755528872920478695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44adb28efb1f11f45a93ab57b37237e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b54ff6e89de929439f4919eb79917b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: a6b6671f5024d4dc3af9f184cc62ba56, type: 3}
+  - {fileID: 21300000, guid: bfb38d3b1997b4ffe8ac2fdd8cd96b31, type: 3}
+  - {fileID: 21300000, guid: 1ed9ba05136f04601a60ca02cfee2fd7, type: 3}
+  - {fileID: 21300000, guid: 25dc12f3ad25a4d639b767c8f633519f, type: 3}
+  - {fileID: 21300000, guid: 3e268bf93549b43b99d27c4584d68863, type: 3}
+  - {fileID: 21300000, guid: 6d2ac7cc98b514192a5151f96f745c60, type: 3}
+  - {fileID: 21300000, guid: 8e9bf285a1c1d4367a66b78884ae689d, type: 3}
+  - {fileID: 21300000, guid: ab35a0c8c19ba4b1987cd0f27f71bb05, type: 3}
+  - {fileID: 21300000, guid: 63f1862ec76424fae9673ab0ed8f9fac, type: 3}
+  - {fileID: 21300000, guid: 26cc260c18fb14e2088fbd5312d9ccf2, type: 3}
+  - {fileID: 21300000, guid: e42f3793fce6146a58c093733fc6b25f, type: 3}
+  - {fileID: 21300000, guid: ebd59309007a14289ada18c75cea6840, type: 3}
