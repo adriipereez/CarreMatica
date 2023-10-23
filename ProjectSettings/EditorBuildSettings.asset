@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaJuego.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Tienda.unity
+    guid: b77d15ec056b25f44a060b7a0ad3d417
+  - enabled: 1
+    path: Assets/Scenes/Ranking.unity
+    guid: eee9458facbe8cf4d8fb21ed88063b69
   m_configObjects: {}
