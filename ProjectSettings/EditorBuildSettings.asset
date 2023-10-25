@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ranking.unity
     guid: eee9458facbe8cf4d8fb21ed88063b69
+  - enabled: 1
+    path: Assets/Scenes/Historia.unity
+    guid: 95041b2beb9c12842af4876beee8c35c
   m_configObjects: {}

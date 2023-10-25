@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BotonSTART : MonoBehaviour
+public class BotonTienda : MonoBehaviour
 {
-public void cargarEscenaJuego()
+    public void cargarEscenaJuego()
     {
-        SceneManager.LoadScene("Historia");
+        SceneManager.LoadScene("Tienda");
     }
-
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
     }
-    
 }
