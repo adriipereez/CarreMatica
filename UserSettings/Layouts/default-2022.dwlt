@@ -314,9 +314,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c8610000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0097ffff5097ffff669cffff0a9effffea9effff4ca1ffffd4a1ffffa2a5ffff18aaffff5ebcffff46c0ffffd8c0fffffccaffffdeccffff36cdffffacdbfffff8dbffff7ee0ffffc4e5ffff6aeaffffb6f1ffff44f3ffff1afbffff38630000b66b00007a6c000058700000827300002e7d00001c7e00001c800000
+      m_ExpandedIDs: 3aeafcff34f2fcffbaf9fcff82fdfcff0006fdff6808fdffb608fdff0609fdff5809fdffa809fdfff009fdfff00afdff8416fdffa617fdff4865fdfff670fdff6073fdfff87efdff967ffdffe47ffdff4a80fdff8e80fdff3498fdff569cfdffb49cfdff42f8ffff92f8ffffdaf8ffff1afbffff08760000ce760000447800008a7900009c790000ee7a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -432,7 +432,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -440,30 +440,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\a.perez\UnityProjects\CarreMatica
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8610000
-    m_LastClickedID: 25016
-    m_ExpandedIDs: 000000008a6100008c6100008e61000000ca9a3b
+    m_SelectedIDs: 94610000
+    m_LastClickedID: 24980
+    m_ExpandedIDs: 000000009461000096610000246d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Sprites
+      m_OriginalName: Sprites
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25030
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -477,7 +477,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a6100008c6100008e610000
+    m_ExpandedIDs: 00000000946100009661000098610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 000000007e670000ce670000d4670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -1000,9 +1000,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 630.09973, y: 618.0782, z: 2.633208}
+    m_Target: {x: 959.9976, y: 539.4589, z: 0}
     speed: 2
-    m_Value: {x: 630.09973, y: 618.0782, z: 2.633208}
+    m_Value: {x: 959.9976, y: 539.4589, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1052,9 +1052,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 852.19446
+    m_Target: 1101.1847
     speed: 2
-    m_Value: 852.19446
+    m_Value: 1101.1847
   m_Ortho:
     m_Target: 1
     speed: 2

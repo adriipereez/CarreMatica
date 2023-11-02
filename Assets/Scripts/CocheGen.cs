@@ -31,5 +31,14 @@ public class CocheGen : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "F1")
+        {
+            gameObject.SetActive(false);
+            Vector2 explosionPosition = transform.position;
+            GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion_0") as GameObject);
+            explosion.transform.position = explosionPosition;
+        }
+    }
 }
