@@ -6,7 +6,6 @@ public class GeneradorCoches : MonoBehaviour
 {
     private Vector2[] carriles = new Vector2[4];
     public GameObject PrefabCoches;
-    // Start is called before the first frame update
     void Start()
     {
         carriles[0] = new Vector2(-3.84f, 9.16f);

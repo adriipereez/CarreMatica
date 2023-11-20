@@ -1,28 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; // Asegúrate de agregar esta línea para importar el espacio de nombres TextMeshPro.
 
-public class CocheGen : MonoBehaviour
+public class Moneda : MonoBehaviour
 {
-    public Sprite[] sprites = new Sprite[13];
     private float vel;
-
+    public Sprite sprite;
 
     void Start()
     {
         vel = 5f;
-        int numRandom = Random.Range(0,12);
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[numRandom];
     }
 
+    // Update is called once per frame
     void Update()
     {
         Vector2 posicion = transform.position;
         posicion.y = posicion.y - vel * Time.deltaTime;
         transform.position = posicion;
         DestuyeSiSaleFuera();
-    }
-
+    } 
+    
     private void DestuyeSiSaleFuera()
     {
         Vector2 costatInferiorIzq = Camera.main.ViewportToWorldPoint(new Vector2(0, -1));
@@ -31,14 +30,15 @@ public class CocheGen : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "F1")
         {
             gameObject.SetActive(false);
-            Vector2 explosionPosition = transform.position;
-            GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion_0") as GameObject);
-            explosion.transform.position = explosionPosition;
+            Destroy(gameObject);
+            GuardarDatos.incrementarMonedas();
+            GameObject.Find("Canvas/TextoMonedas").GetComponent<TextMeshProUGUI>().text = GuardarDatos.cantidadMonedas().ToString();
         }
     }
 }

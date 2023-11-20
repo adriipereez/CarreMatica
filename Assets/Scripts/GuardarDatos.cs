@@ -12,6 +12,24 @@ public class GuardarDatos : MonoBehaviour
     {
         CargarDatos();
     }
+
+    public static void incrementarMonedas() {
+        DatosJuego dj = CargarDatos();
+        dj.monedasRecolectadas++;
+        GuardarDatos2(dj);
+    }
+
+    public static void eliminarMonedas(int x) {
+        DatosJuego dj = CargarDatos();
+        dj.monedasRecolectadas-=x;
+        GuardarDatos2(dj);
+    }
+
+    public static int cantidadMonedas() {
+        DatosJuego dj = CargarDatos();
+        return dj.monedasRecolectadas;
+    }
+
     public static DatosJuego CargarDatos()
     {
         if (File.Exists(rutaArchivo))
@@ -25,7 +43,7 @@ public class GuardarDatos : MonoBehaviour
         }
         else {
             DatosJuego dj = new DatosJuego();
-            dj.monedasRecolectadas = 10;
+            dj.monedasRecolectadas = 0;
             GuardarDatos2(dj);
         }
         return null;
