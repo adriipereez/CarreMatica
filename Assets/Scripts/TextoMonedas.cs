@@ -8,8 +8,7 @@ public class TextoMonedas : MonoBehaviour
     public TextMeshProUGUI textoMonedas;
     void Start()
     {
-        DatosJuego datoJuegos = GuardarDatos.CargarDatos();
-        int a = datoJuegos.monedasRecolectadas;
+        int a = GuardarDatos.cantidadMonedas();
         string b = "" + a;
         textoMonedas.SetText(b);
     }
