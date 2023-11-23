@@ -7,4 +7,5 @@ using UnityEngine;
 public class DatosJuego
 {
     public int monedasRecolectadas;
+    public int[] precioCoches;
 }
