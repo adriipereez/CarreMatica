@@ -44,6 +44,7 @@ public class GuardarDatos : MonoBehaviour
         else {
             DatosJuego dj = new DatosJuego();
             dj.monedasRecolectadas = 0;
+            dj.precioCoches = new int[5];
             GuardarDatos2(dj);
         }
         return null;
@@ -58,5 +59,20 @@ public class GuardarDatos : MonoBehaviour
         file.Close();
     }
 
+    public static bool MirarSiEstaComprado(int x)
+    {
+        DatosJuego dj = CargarDatos();
+        return dj.precioCoches[x] == 0;
+    }
     
+    public static bool ComprarCoche(int x)
+    {
+        DatosJuego dj = CargarDatos();
+        if (dj.monedasRecolectadas >= dj.precioCoches[x]) {
+            dj.monedasRecolectadas -= dj.precioCoches[x];
+            GuardarDatos2(dj);
+            return true;
+        }
+        return false;
+    }
 }

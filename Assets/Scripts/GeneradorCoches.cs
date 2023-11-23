@@ -13,7 +13,7 @@ public class GeneradorCoches : MonoBehaviour
         carriles[2] = new Vector2(1.27f, 9.16f); 
         carriles[3] = new Vector2(3.76f, 9.16f);
 
-        InvokeRepeating("GenerarCoche", 2f, 1f);
+        IniciarGeneradorCoches();
     }
     private void GenerarCoche()
     {
@@ -27,4 +27,14 @@ public class GeneradorCoches : MonoBehaviour
     {
       
     }
+    public void IniciarGeneradorCoches()
+    {
+        InvokeRepeating("GenerarCoche", 1f, 1f);
+    }
+
+    public void CancelarGeneradorCoche()
+    {
+        CancelInvoke("GenerarCoche");
+    }
+
 }

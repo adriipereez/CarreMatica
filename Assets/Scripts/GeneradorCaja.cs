@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeneradorMonedas : MonoBehaviour
+public class GeneradorCaja : MonoBehaviour
 {
     private Vector2[] carriles = new Vector2[4];
 
-    public GameObject bronze_coin;
+    public GameObject caja_Opraciones;
     void Start()
     {
         carriles[0] = new Vector2(-3.84f, 9.16f);
@@ -14,29 +14,28 @@ public class GeneradorMonedas : MonoBehaviour
         carriles[2] = new Vector2(1.27f, 9.16f);
         carriles[3] = new Vector2(3.76f, 9.16f);
 
-        IniciarGeneradorMonedas();
-        
+        InvokeRepeating("caja", 2f, 5f);
     }
 
     void Update()
     {
-        
+
     }
 
-    private void Moneda()
+    private void caja()
     {
-        GameObject Moneda = Instantiate(bronze_coin);
+        GameObject caja = Instantiate(caja_Opraciones);
         int a = Random.Range(0, carriles.Length);
-        Moneda.transform.position = carriles[a];
+        caja.transform.position = carriles[a];
     }
 
-    public void IniciarGeneradorMonedas()
+    public void IniciarGeneradorCaja()
     {
-        InvokeRepeating("Moneda", 2f, 5f);
+        InvokeRepeating("caja", 2f, 5f);
     }
 
-    public void CancelarGeneradorMonedas()
+    public void CancelarGeneradorCaja()
     {
-        CancelInvoke("Moneda");
+        CancelInvoke("caja");
     }
 }

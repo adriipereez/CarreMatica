@@ -6,7 +6,6 @@ using TMPro; // Asegúrate de agregar esta línea para importar el espacio de no
 public class Moneda : MonoBehaviour
 {
     private float vel;
-    public Sprite sprite;
 
     void Start()
     {
