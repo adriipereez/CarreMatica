@@ -57,3 +57,6 @@ TagManager:
   - name: ForeGround
     uniqueID: 11082059
     locked: 0
+  - name: Coche
+    uniqueID: 739769301
+    locked: 0

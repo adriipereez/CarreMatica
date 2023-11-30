@@ -34,7 +34,6 @@ public class caja : MonoBehaviour
     {
         if (other.tag == "F1")
         {
-            
             gameObject.SetActive(false);
             Destroy(gameObject);
             GameObject.Find("GeneradorMonedas").GetComponent<GeneradorMonedas>().CancelarGeneradorMonedas();
@@ -52,6 +51,7 @@ public class caja : MonoBehaviour
             }
             GameObject.Find("Pizarra").GetComponent<Renderer>().sortingLayerName = "ForeGround";
             GameObject.Find("TextOperaciones").GetComponent<Operacines>().GenerarOperacion();
+            GameObject.Find("TextOperaciones").GetComponent<Operacines>().bombasCreadas=true;
         }
     }
 }
