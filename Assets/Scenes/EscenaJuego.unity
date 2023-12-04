@@ -1392,6 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomba: {fileID: 238998941375010691, guid: ebaef48688f43c44382d7fb05fefb4c2, type: 3}
+  bombasCreadas: 0
 --- !u!1 &1999330310
 GameObject:
   m_ObjectHideFlags: 0
