@@ -43,8 +43,8 @@ public class GuardarDatos : MonoBehaviour
         }
         else {
             DatosJuego dj = new DatosJuego();
-            dj.monedasRecolectadas = 0;
-            dj.precioCoches = new int[5];
+            dj.monedasRecolectadas = 80;
+            dj.precioCoches = new int[] { 10, 10, 10, 10, 20 };
             GuardarDatos2(dj);
         }
         return null;
@@ -70,6 +70,7 @@ public class GuardarDatos : MonoBehaviour
         DatosJuego dj = CargarDatos();
         if (dj.monedasRecolectadas >= dj.precioCoches[x]) {
             dj.monedasRecolectadas -= dj.precioCoches[x];
+            dj.precioCoches[x] = 0;
             GuardarDatos2(dj);
             return true;
         }
