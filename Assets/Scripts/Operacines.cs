@@ -77,43 +77,91 @@ public class Operacines : MonoBehaviour
         string strResultadoCorrecto = Resultado + "";
         int signo = Random.Range(0, 2);
         int margenError = Random.Range(1, 10);
+        int margenError1 = Random.Range(1, 10);
+        int margenError2 = Random.Range(1, 10);
 
         if (posIF == 0) { 
+            Debug.Log("PosCorrecte 1");
             bomba1.GetComponent<Bomb>().SetTextResultat(strResultadoCorrecto);
             bomba1.GetComponent<Bomb>().hacerlaCorrecta();
+            
+            while(margenError == Resultado){
+                margenError = Random.Range(1, 10);
+            }
             GenerarTextErroneo(signo, margenError, bomba2);
-            GenerarTextErroneo(signo, margenError, bomba3);
-            GenerarTextErroneo(signo, margenError, bomba4);
+            
+            while(margenError1 == Resultado || margenError1 == margenError){
+                margenError1 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError1, bomba3);
+            
+            while(margenError2 == Resultado || margenError2 == margenError1 || margenError2 == margenError){
+                margenError2 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError2, bomba4);
 
         } else if (posIF == 1)
         {
             bomba2.GetComponent<Bomb>().SetTextResultat(strResultadoCorrecto);
             bomba2.GetComponent<Bomb>().hacerlaCorrecta();
+
+            while(margenError == Resultado){
+                margenError = Random.Range(1, 10);
+            }
             GenerarTextErroneo(signo, margenError, bomba1);
-            GenerarTextErroneo(signo, margenError, bomba3);
-            GenerarTextErroneo(signo, margenError, bomba4);
+
+            while(margenError1 == Resultado || margenError1 == margenError){
+                margenError1 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError1, bomba3);
+
+            while(margenError2 == Resultado || margenError2 == margenError1 || margenError2 == margenError){
+                margenError2 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError2, bomba4);
 
         } else if(posIF == 2) 
         {
             bomba3.GetComponent<Bomb>().SetTextResultat(strResultadoCorrecto);
             bomba3.GetComponent<Bomb>().hacerlaCorrecta();
-            GenerarTextErroneo(signo, margenError, bomba1);
+            
+            while(margenError == Resultado){
+                margenError = Random.Range(1, 10);
+            }
             GenerarTextErroneo(signo, margenError, bomba2);
-            GenerarTextErroneo(signo, margenError, bomba4);
+            
+            while(margenError1 == Resultado || margenError1 == margenError){
+                margenError1 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError1, bomba1);
+           
+            while(margenError2 == Resultado || margenError2 == margenError1 || margenError2 == margenError){
+                margenError2 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError2, bomba4);
         }
         else if (posIF == 3)
         {
             bomba4.GetComponent<Bomb>().SetTextResultat(strResultadoCorrecto);
             bomba4.GetComponent<Bomb>().hacerlaCorrecta();
-            GenerarTextErroneo(signo, margenError, bomba1);
+            while(margenError == Resultado){
+                margenError = Random.Range(1, 10);
+            }
+
             GenerarTextErroneo(signo, margenError, bomba2);
-            GenerarTextErroneo(signo, margenError, bomba3);
+            while(margenError1 == Resultado || margenError1 == margenError){
+                margenError1 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError1, bomba3);
+            while(margenError2 == Resultado || margenError2 == margenError1 || margenError2 == margenError){
+                margenError2 = Random.Range(1, 10);
+            }
+            GenerarTextErroneo(signo, margenError2, bomba1); 
         }
     }
     private void GenerarTextErroneo(int signo, int margenError, GameObject bomba)
     {
         signo = Random.Range(0, 2);
-        margenError = Random.Range(1, 10);
 
         if (signo == 0)
         {
