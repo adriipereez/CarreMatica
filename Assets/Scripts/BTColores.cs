@@ -1,51 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class BotonVerde : MonoBehaviour
+public class BTColores : MonoBehaviour
 {
+
+    public int id;
 
     void Start()
     {
-        if (GuardarDatos.MirarSiEstaComprado(0))
+        if (GuardarDatos.MirarSiEstaComprado(id))
         {
-              // Mostrar boton de seleccionar
+            gameObject.SetActive(false);
         }
-        else { 
-
-        }   
     }
-
 
     void Update()
     {
         
     }
 
-    public void comprarCoche0() 
-    {
-        GuardarDatos.ComprarCoche(0);
-        if (GuardarDatos.ComprarCoche(0))
+    public void comprarCoche0()
+    { 
+        if (GuardarDatos.ComprarCoche(id))
         {
-            gameObject.SetActive(false);   
+            gameObject.SetActive(false);
         }
-   
     }
-    public void comprarCoche1()
-    {
-
-    }
-    public void comprarCoche2()
-    {
-
-    }
-    public void comprarCoche3()
-    {
-
-    }
-    public void comprarCoche4()
-    {
-
-    }
-
 }

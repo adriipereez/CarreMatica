@@ -9,10 +9,44 @@ using UnityEngine.UIElements;
 public class CocheMov : MonoBehaviour
 {
     public float velocidadMovimiento = 5.0f; 
-    public string Menu;
+    public Sprite nuevoSpriteVerde;
+    public Sprite nuevoSpriteMorado;
+    public Sprite nuevoSpriteAzul;
+    public Sprite nuevoSpriteTurquesa;
+    public Sprite nuevoSpriteRojo;
+    public Sprite DEFAULT;
+    private SpriteRenderer miSpriteRenderer;
+
     void Start()
     {
-       
+        miSpriteRenderer = GetComponent<SpriteRenderer>();
+        DatosJuego dj = GuardarDatos.CargarDatos();
+        int idcoche = dj.idcoche;
+        Sprite spritenuevo = gameObject.GetComponent<SpriteRenderer>().sprite;
+        if (idcoche == -1)
+        {
+            miSpriteRenderer.sprite = DEFAULT;
+        }
+        else if(idcoche == 0)
+        {
+            miSpriteRenderer.sprite = nuevoSpriteVerde;
+        }
+        else if (idcoche == 1)
+        {
+            miSpriteRenderer.sprite = nuevoSpriteMorado;
+        }
+        else if (idcoche == 2)
+        {
+            miSpriteRenderer.sprite = nuevoSpriteAzul;
+        }
+        else if (idcoche == 3)
+        {
+            miSpriteRenderer.sprite = nuevoSpriteTurquesa;
+        }
+        else if (idcoche == 4)
+        {
+            miSpriteRenderer.sprite = nuevoSpriteRojo;
+        }
     }
     void Update()
     {

@@ -4219,7 +4219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadMovimiento: 5
-  Menu: 
+  nuevoSpriteVerde: {fileID: 21300000, guid: 55a49a787132b344097bb1e660744d75, type: 3}
+  nuevoSpriteMorado: {fileID: 21300000, guid: b5b12994be0d55944aaa25c453d10caa, type: 3}
+  nuevoSpriteAzul: {fileID: 21300000, guid: 46fc500309703e44c938475aa63c50c8, type: 3}
+  nuevoSpriteTurquesa: {fileID: 21300000, guid: ae84159197d46624fbf53d7b38c40679, type: 3}
+  nuevoSpriteRojo: {fileID: 21300000, guid: 2087c8ea6f8dfa847955779612d6ccd8, type: 3}
+  DEFAULT: {fileID: 21300000, guid: ef21e63d9b77b9a429a80ff367731d1f, type: 3}
 --- !u!61 &1254592877
 BoxCollider2D:
   m_ObjectHideFlags: 0

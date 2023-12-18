@@ -45,6 +45,7 @@ public class GuardarDatos : MonoBehaviour
             DatosJuego dj = new DatosJuego();
             dj.monedasRecolectadas = 80;
             dj.precioCoches = new int[] { 10, 10, 10, 10, 20 };
+            dj.idcoche = -1;
             GuardarDatos2(dj);
         }
         return null;
@@ -75,5 +76,15 @@ public class GuardarDatos : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public static int[] getDatosCoche() {
+        return CargarDatos().precioCoches;
+    }
+
+    public static int SaberIdcolorCoche()
+    {
+
+        return 0;
     }
 }

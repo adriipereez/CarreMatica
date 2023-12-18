@@ -8,4 +8,5 @@ public class DatosJuego
 {
     public int monedasRecolectadas;
     public int[] precioCoches;
+    public int idcoche;
 }
