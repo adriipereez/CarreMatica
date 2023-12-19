@@ -43,7 +43,6 @@ public class Operacines : MonoBehaviour
         int num1 = Random.Range(1,10);
         int num2 = Random.Range(1, 10);
         int numSigno = Random.Range(1, 4);
-        numSigno = 2;
         if (numSigno==1)
         {
             TextoOperacion = num1 + " + " + num2;
