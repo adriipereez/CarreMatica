@@ -475,10 +475,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bajo un cielo estrellado, un coche de F\xF3rmula 1 se lanz\xF3 a toda
-    velocidad por una solitaria carretera, sus neum\xE1ticos chirriaban mientras
-    los sicarios los persegu\xEDan implacablemente. El piloto, desesperado, sab\xEDa
-    que su \xFAnica esperanza de escape estaba en su habilidad y las matem\xE1ticas."
+  m_text: "Sota un cel estrellat, un cotxe de F\xF3rmula 1 es va llan\xE7ar a tota
+    velocitat per una solit\xE0ria carretera, els seus pneum\xE0tics xiulien mentre
+    els sicaris els perseguien implacablement. El pilot, desesperat, sabia que la
+    seva \xFAnica esperan\xE7a d'escapament estava en la seva habilitat i les matem\xE0tiques."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
